@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
     <meta charset="utf-8">
     <title>EMPRESA</title>
-    <!-- Estilos -->
+    <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
-    {% load static %}
+{% load static %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Teko:wght@300;400;500;600;700&amp;display=swap"
-          rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Teko:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="{% static 'core/css/bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'core/css/fontawesome-all.css' %}" rel="stylesheet">
     <link href="{% static 'core/css/owl.css' %}" rel="stylesheet">
@@ -21,7 +20,8 @@
     <link href="{% static 'core/css/custom-animate.css' %}" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'core/css/jarallax.css' %}">
     <link href="{% static 'core/css/style.css' %}" rel="stylesheet">
-
+    <!-- rtl css -->
+    <link href="{% static 'core/css/rtl.css' %}" rel="stylesheet">
     <!-- Responsive File -->
     <link href="{% static 'core/css/responsive.css' %}" rel="stylesheet">
 
@@ -34,350 +34,412 @@
     <!-- Responsive Settings -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]>
-    <script src="{% static 'core/js/respond.js' %}"></script><![endif]-->
+    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="{% static 'core/js/respond.js' %}"></script><![endif]-->
 </head>
 
 <body>
 
-<div class="page-wrapper">
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="icon"></div>
-    </div>
-
-    <!-- Main Header -->
-    <header class="main-header header-style-one header-style-four">
-
-        <!-- Header Upper -->
-        <div class="header-upper">
-            <div class="inner-container clearfix">
-                <!--Logo-->
-                <div class="logo-box">
-                    <div class="logo"><a href="{%url 'home' %}" title="Linoor - DIgital Agency HTML Template"><img
-                            src="{% static 'core/images/logo.png' %}" id="dLogo" class="main-logo"
-                            alt="LOGO EMPRESA"
-                            title="LOGO EMPRESA"></a></div>
-                </div>
-                <div class="nav-outer clearfix">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span
-                            class="txt">Menu</span></div>
-
-                    <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                            <ul class="navigation clearfix one-page-scroll-menu">
-
-                                <li class="scrollToLink"><a href="#certificado">Certificado</a></li>
-                                <li class="scrollToLink"><a href="#preguntas">Preguntas Frecuentes</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-
-                <div class="other-links clearfix">
-
-                    <div class="link-box">
-                        <div class="call-us">
-                            <a class="link" href="#">
-                                <span class="icon"></span>
-                                <span class="sub-text">Consultar Certificado</span>
-                                <span class="number">Click Aquí!</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="icon"></div>
         </div>
-        <!--End Header Upper-->
 
+        <!-- Main Header -->
+        <header class="main-header header-style-one header-style-four">
 
-    </header>
-    <!--Mini menu celu - Mobile -->
-    <div class="side-menu__block">
-        <div class="side-menu__block-overlay custom-cursor__overlay">
-            <div class="cursor"></div>
-            <div class="cursor-follower"></div>
-        </div><!-- /.side-menu__block-overlay -->
-        <div class="side-menu__block-inner ">
-            <div class="side-menu__top justify-content-end">
-
-                <a href="#" class="side-menu__toggler side-menu__close-btn"><img
-                        src="{% static 'core/images/icons/close-1-1.png' %}"
-                        alt=""></a>
-            </div><!-- /.side-menu__top -->
-
-
-            <nav class="mobile-nav__container">
-                <!-- content is loading via js -->
-            </nav>
-            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
-            <div class="side-menu__content">
-                <p>Linoor is a premium Template for Digital Agencies, Start Ups, Small Business and a wide range of
-                    other agencies.</p>
-                <p><a href="mailto:needhelp@linoor.com">needhelp@linoor.com</a> <br> <a href="tel:888-999-0000">888
-                    999 0000</a></p>
-            </div><!-- /.side-menu__content -->
-        </div><!-- /.side-menu__block-inner -->
-    </div><!-- /.side-menu__block -->
-    <!-- slider -->
-    <section class="banner-section banner-one banner-one-page" id="home">
-
-        <div class="banner-carousel owl-theme owl-carousel">
-            <!-- Slide Item -->
-            <div class="slide-item">
-                <div class="image-layer"
-                     style="background-image: url({% static 'core/images/main-slider/2-1.jpg' %});"></div>
-                <div class="auto-container">
-                    <div class="content-box">
-                        <div class="content">
-                            <div class="inner text-center">
-                                <div class="sub-title">welcome to Linoor agency</div>
-                                <h1>Discover <br> <span>new linoor agency</span></h1>
-                                <div class="link-box">
-                                    <a class="theme-btn btn-style-one" href="about.html">
-                                        <i class="btn-curve"></i>
-                                        <span class="btn-title">Discover More</span>
-                                    </a>
-                                    <div class="vid-link">
-                                        <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                           class="lightbox-image">
-                                            <div class="icon"><span class="flaticon-play-button-1"></span><i
-                                                    class="ripple"></i></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- Header Upper -->
+            <div class="header-upper">
+                <div class="inner-container clearfix">
+                    <!--Logo-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="{%url 'home' %}" title="Linoor - DIgital Agency HTML Template"><img
+                                    src="{% static 'core/images/logo.png' %}" id="dLogo" class="main-logo"
+                                    alt="LOGO EMPRESA"
+                                    title="LOGO EMPRESA"></a></div>
                     </div>
-                </div>
-            </div>
+                    <div class="nav-outer clearfix">
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon flaticon-menu-2"></span><span
+                                class="txt">Menu</span></div>
 
-            <!-- Slide Item -->
-            <div class="slide-item">
-                <div class="image-layer"
-                     style="background-image: url({% static 'core/images/main-slider/2-2.jpg' %});"></div>
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-md navbar-light">
+                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <ul class="navigation clearfix one-page-scroll-menu">
 
-                <div class="auto-container">
-                    <div class="content-box">
-                        <div class="content">
-                            <div class="inner text-center">
-                                <div class="sub-title">welcome to Linoor agency</div>
-                                <h1>Discover <br> <span>new linoor agency</span></h1>
-                                <div class="link-box">
-                                    <a class="theme-btn btn-style-one" href="about.html">
-                                        <i class="btn-curve"></i>
-                                        <span class="btn-title">Discover More</span>
-                                    </a>
-                                    <div class="vid-link">
-                                        <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-                                           class="lightbox-image">
-                                            <div class="icon"><span class="flaticon-play-button-1"></span><i
-                                                    class="ripple"></i></div>
-                                        </a>
-                                    </div>
-                                </div>
+                                    <li class="scrollToLink"><a href="#certificado">Certificado</a></li>
+                                    <li class="scrollToLink"><a href="#preguntas">Preguntas Frecuentes</a></li>
+                                    <li class="scrollToLink"><a href="#portfolio">Datos</a></li>
+                                </ul>
                             </div>
-                        </div>
+                        </nav>
                     </div>
-                </div>
-            </div>
 
-        </div>
-    </section>
-    <!--End slider -->
+                    <div class="other-links clearfix">
 
-    <!--certificado-->
-    <section class="about-section" id="certificado">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!--Image Column-->
-                <div class="image-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                    <div class="inner">
-                        <div class="image-block wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><img
-                                src="{% static 'core/images/resource/featured-image-1.jpg' %}" alt=""></div>
-                        <div class="image-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms"><img
-                                src="{% static 'core/images/resource/featured-image-2.jpg' %}" alt=""></div>
-                    </div>
-                </div>
-                <!--Text Column-->
-                <div class="text-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                    <div class="inner">
-                        <div class="sec-title">
-                            <h2>Génera tu certificado <br>Ahora<span class="dot">.</span></h2>
-                            <div class="lower-text">Genera tu certificado para ingreso ahora de la manera más sencilla y
-                                fácil.
-                            </div>
-                        </div>
-                        <div class="text clearfix">
-                            <ul>
-                                <li>Es muy Fácil.</li>
-                                <li>Es muy Rápido.</li>
-                                <li>Es muy Seguro.</li>
-                            </ul>
-                            <div class="since"><a><span class="txt">Generar <br>Certificado</span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--preguntas-->
-    <section class="we-do-section" id="preguntas">
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!--Left Column-->
-                <div class="left-col col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner">
-                        <div class="sec-title">
-                            <h2>Las Preguntas Más <br>Frecuentes<span class="dot">.</span></h2>
-                        </div>
-                        <div class="featured-block clearfix">
-                            <div class="image"><img src="{% static 'core/images/resource/featured-image-4.jpg' %}"
-                                                    alt=""></div>
-                            <div class="text">Porqué nuestras misión es facilitarte la vida, a continuación un video
-                                tutirial de como usar nuestro sistema de certificados.
-                            </div>
-                            <div class="vid-link">
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="lightbox-image">
-                                    <div class="icon"><span class="flaticon-play-button-1"></span><i class="ripple"></i>
-                                    </div>
+                        <div class="link-box">
+                            <div class="call-us">
+                                <a class="link" href="#">
+                                    <span class="icon"></span>
+                                    <span class="sub-text">Consultar Certificado</span>
+                                    <span class="number">Click Aquí!</span>
                                 </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--Right Column-->
-                <div class="right-col col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner">
-                        <div class="faq-box">
-                            <ul class="accordion-box clearfix">
-                                <!--Block-->
-                                <li class="accordion block active-block">
-                                    <div class="acc-btn active"><span class="count">1.</span> We help to create
-                                        visual strategies
-                                    </div>
-                                    <div class="acc-content current">
-                                        <div class="content">
-                                            <div class="text">There are many variations of passages the majority
-                                                have suffered alteration in some fo injected humour, or randomised
-                                                words believable.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
 
-                                <!--Block-->
-                                <li class="accordion block">
-                                    <div class="acc-btn"><span class="count">2.</span> Motion Graphics & Animations
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="content">
-                                            <div class="text">There are many variations of passages the majority
-                                                have suffered alteration in some fo injected humour, or randomised
-                                                words believable.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!--Block-->
-                                <li class="accordion block">
-                                    <div class="acc-btn"><span class="count">3.</span> We help to achieve mutual
-                                        goals
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="content">
-                                            <div class="text">There are many variations of passages the majority
-                                                have suffered alteration in some fo injected humour, or randomised
-                                                words believable.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Fin Preguntas -->
-    <!-- contador Seccion -->
-    <section class="facts-section jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 80%">
-        <!-- <div class="image-layer" style="background-image: url(images/background/image-1.jpg);"></div> -->
-        <img src="{% static 'core/images/background/image-1.jpg' %}" alt="" class="jarallax-img">
-        <div class="auto-container">
-            <div class="inner-container">
+            <!--End Header Upper-->
 
-                <!-- contador-->
-                <div class="fact-counter">
-                    <div class="row clearfix">
 
-                        <!--Column-->
-                        <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner">
-                                <div class="content">
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="4000" data-stop="8705">0</span>
+        </header>
+        <!-- End Main Header -->
+
+        <!--Mobile Menu-->
+        <div class="side-menu__block">
+
+
+            <div class="side-menu__block-overlay custom-cursor__overlay">
+                <div class="cursor"></div>
+                <div class="cursor-follower"></div>
+            </div><!-- /.side-menu__block-overlay -->
+            <div class="side-menu__block-inner ">
+                <div class="side-menu__top justify-content-end">
+
+                    <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="{% static 'core/images/icons/close-1-1.png' %}"
+                            alt=""></a>
+                </div><!-- /.side-menu__top -->
+
+
+                <nav class="mobile-nav__container">
+                    <!-- content is loading via js -->
+                </nav>
+                <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+                <div class="side-menu__content">
+                    <p>Linoor is a premium Template for Digital Agencies, Start Ups, Small Business and a wide range of
+                        other agencies.</p>
+                    <p><a href="mailto:needhelp@linoor.com">needhelp@linoor.com</a> <br> <a href="tel:888-999-0000">888
+                            999 0000</a></p>
+                </div><!-- /.side-menu__content -->
+            </div><!-- /.side-menu__block-inner -->
+        </div><!-- /.side-menu__block -->
+
+
+        <!-- Banner Section -->
+        <section class="banner-section banner-one banner-one-page" id="home">
+
+            <div class="banner-carousel owl-theme owl-carousel">
+                <!-- Slide Item -->
+                <div class="slide-item">
+                    <div class="image-layer" style="background-image: url({% static 'core/images/main-slider/2-1.jpg' %});"></div>
+
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <div class="content">
+                                <div class="inner text-center">
+                                    <div class="sub-title">welcome to Linoor agency</div>
+                                    <h1>Discover <br> <span>new linoor agency</span></h1>
+                                    <div class="link-box">
+                                        <a class="theme-btn btn-style-one" href="about.html">
+                                            <i class="btn-curve"></i>
+                                            <span class="btn-title">Discover More</span>
+                                        </a>
+                                        <div class="vid-link">
+                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
+                                                class="lightbox-image">
+                                                <div class="icon"><span class="flaticon-play-button-1"></span><i
+                                                        class="ripple"></i></div>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="counter-title">Usuarios Registrados</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--Column-->
-                        <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-                            <div class="inner">
-                                <div class="content">
-                                    <div class="count-outer count-box alternate">
-                                        <span class="count-text" data-speed="3000" data-stop="480">0</span>
-                                    </div>
-                                    <div class="counter-title">Certificados Emitidos</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Slide Item -->
+                <div class="slide-item">
+                    <div class="image-layer" style="background-image: url({% static 'core/images/main-slider/2-2.jpg' %});"></div>
+
+                    <div class="auto-container">
+                        <div class="content-box">
+                            <div class="content">
+                                <div class="inner text-center">
+                                    <div class="sub-title">welcome to Linoor agency</div>
+                                    <h1>Discover <br> <span>new linoor agency</span></h1>
+                                    <div class="link-box">
+                                        <a class="theme-btn btn-style-one" href="about.html">
+                                            <i class="btn-curve"></i>
+                                            <span class="btn-title">Discover More</span>
+                                        </a>
+                                        <div class="vid-link">
+                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
+                                                class="lightbox-image">
+                                                <div class="icon"><span class="flaticon-play-button-1"></span><i
+                                                        class="ripple"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
-    <!-- Fin contador Seccion -->
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="footer-bottom">
+        </section>
+        <!--End Banner Section -->
+
+        <!--About Section-->
+        <section class="about-section" id="certificado">
             <div class="auto-container">
-                <div class="inner clearfix">
-                    <div class="copyright">&copy; Empresa {% now "Y" %} - Todos los derechos reservados.</div>
+                <div class="row clearfix">
+                    <!--Image Column-->
+                    <div class="image-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="inner">
+                            <div class="image-block wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><img
+                                    src="{% static 'core/images/resource/featured-image-1.jpg' %}" alt=""></div>
+                            <div class="image-block wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms"><img
+                                    src="{% static 'core/images/resource/featured-image-2.jpg' %}" alt=""></div>
+                        </div>
+                    </div>
+                    <!--Text Column-->
+                    <div class="text-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h2>Génera tu certificado <br>Ahora<span class="dot">.</span></h2>
+                                <div class="lower-text">Genera tu certificado para ingreso ahora de la manera más sencilla y fácil.</div>
+                            </div>
+                            <div class="text clearfix">
+                                <ul>
+                                    <li>Es muy Fácil.</li>
+                                    <li>Es muy Rápido.</li>
+                                    <li>Es muy Seguro.</li>
+                                </ul>
+                                <div class="since"><a><span class="txt">Generar <br>Certificado</span></a></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </footer>
-</div>
-<!--Fin Pagina-->
-<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-<script src="{% static 'core/js/jquery.js' %}"></script>
-<script src="{% static 'core/js/popper.min.js' %}"></script>
-<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'core/js/TweenMax.js' %}"></script>
-<script src="{% static 'core/js/jquery-ui.js' %}"></script>
-<script src="{% static 'core/js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'core/js/owl.js' %}"></script>
-<script src="{% static 'core/js/mixitup.js' %}"></script>
-<script src="{% static 'core/js/knob.js' %}"></script>
-<script src="{% static 'core/js/validate.js' %}"></script>
-<script src="{% static 'core/js/appear.js' %}"></script>
-<script src="{% static 'core/js/wow.js' %}"></script>
-<script src="{% static 'core/js/jQuery.style.switcher.min.js' %}"></script>
-<script src="{% static 'core/js/jarallax.min.js' %}"></script>
-<script src="{% static 'core/js/jquery.easing.min.js' %}"></script>
-<script src="{% static 'core/js/custom-script.js' %}"></script>
+
+        <!--We DO Section-->
+        <section class="we-do-section"  id="preguntas">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Left Column-->
+                    <div class="left-col col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner">
+                            <div class="sec-title">
+                                <h2>Las Preguntas Más <br>Frecuentes<span class="dot">.</span></h2>
+                            </div>
+                            <div class="featured-block clearfix">
+                                <div class="image"><img src="{% static 'core/images/resource/featured-image-4.jpg' %}" alt=""></div>
+                                <div class="text">There are many variatns of passages the majority have suffered
+                                    alteration in some foor randomised words believable.</div>
+                                        <div class="vid-link">
+                                            <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="lightbox-image">
+                                                <div class="icon"><span class="flaticon-play-button-1"></span><i class="ripple"></i></div>
+                                            </a>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Right Column-->
+                    <div class="right-col col-lg-6 col-md-12 col-sm-12">
+                        <div class="inner">
+                            <div class="faq-box">
+                                <ul class="accordion-box clearfix">
+                                    <!--Block-->
+                                    <li class="accordion block active-block">
+                                        <div class="acc-btn active"><span class="count">1.</span> We help to create
+                                            visual strategies</div>
+                                        <div class="acc-content current">
+                                            <div class="content">
+                                                <div class="text">There are many variations of passages the majority
+                                                    have suffered alteration in some fo injected humour, or randomised
+                                                    words believable.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--Block-->
+                                    <li class="accordion block">
+                                        <div class="acc-btn"><span class="count">2.</span> Motion Graphics & Animations
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text">There are many variations of passages the majority
+                                                    have suffered alteration in some fo injected humour, or randomised
+                                                    words believable.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!--Block-->
+                                    <li class="accordion block">
+                                        <div class="acc-btn"><span class="count">3.</span> We help to achieve mutual
+                                            goals</div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <div class="text">There are many variations of passages the majority
+                                                    have suffered alteration in some fo injected humour, or randomised
+                                                    words believable.</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Funfacts Section -->
+        <section class="facts-section jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% 80%">
+            <!-- <div class="image-layer" style="background-image: url(images/background/image-1.jpg);"></div> -->
+            <img src="{% static 'core/images/background/image-1.jpg' %}" alt="" class="jarallax-img">
+            <div class="auto-container">
+                <div class="inner-container">
+
+                    <!-- Fact Counter -->
+                    <div class="fact-counter">
+                        <div class="row clearfix">
+
+                            <!--Column-->
+                            <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner">
+                                    <div class="content">
+                                        <div class="count-outer count-box">
+                                            <span class="count-text" data-speed="4000" data-stop="8705">0</span>
+                                        </div>
+                                        <div class="counter-title">Usuarios Registrados</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Column-->
+                            <div class="column counter-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="inner">
+                                    <div class="content">
+                                        <div class="count-outer count-box alternate">
+                                            <span class="count-text" data-speed="3000" data-stop="480">0</span>
+                                        </div>
+                                        <div class="counter-title">Certificados Emitidos</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Funfacts Section -->
+
+        <!-- Trusted Section -->
+        <section class="trusted-section">
+            <div class="auto-container">
+                <div class="outer-container">
+                    <div class="row clearfix">
+                        <div class="left-col col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner">
+                                <div class="col-header">
+                                    <div class="header-inner">
+                                        <span>We’re Committed To Deliver High Quality Projects .</span>
+                                    </div>
+                                </div>
+                                <div class="features">
+                                    <div class="feature">
+                                        <div class="count"><span>01</span></div>
+                                        <h5>TOTAL DESIGN FREEDOM FOR EVERYONE</h5>
+                                        <div class="sub-text">core features</div>
+                                    </div>
+                                    <div class="feature">
+                                        <div class="count"><span>02</span></div>
+                                        <h5>BASIC RULES OF RUNNING WEB AGENCY</h5>
+                                        <div class="sub-text">core features</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-col col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                            <div class="inner">
+                                <div class="sec-title">
+                                    <h2>We’re trusted by more <br>than 6260 clients<span class="dot">.</span></h2>
+                                    <div class="lower-text">There are many variations of passages of Lorem Ipsum
+                                        available, but the majority have suffered alteration in some form, simply free
+                                        text by injected humour, or randomised.</div>
+                                </div>
+                                <div class="featured-block-two clearfix">
+                                    <div class="image"><img src="{% static 'core/images/resource/featured-image-5.jpg' %}" alt=""></div>
+                                    <div class="text">
+                                        <ul>
+                                            <li> Suspe ndisse sagittis leo.</li>
+                                            <li>Entum estibulum is posuere.</li>
+                                            <li>If you are going to use passage.</li>
+                                            <li>Lorem Ipsum on the tend to repeat.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+       <!-- Footer -->
+        <footer class="main-footer">
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="inner clearfix">
+                        <div class="copyright">&copy; Empresa {% now "Y" %} - Todos los derechos reservados.</div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    <!--Fin Pagina-->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+    <script src="{% static 'core/js/jquery.js' %}"></script>
+    <script src="{% static 'core/js/popper.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/TweenMax.js' %}"></script>
+    <script src="{% static 'core/js/jquery-ui.js' %}"></script>
+    <script src="{% static 'core/js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'core/js/owl.js' %}"></script>
+    <script src="{% static 'core/js/mixitup.js' %}"></script>
+    <script src="{% static 'core/js/knob.js' %}"></script>
+    <script src="{% static 'core/js/validate.js' %}"></script>
+    <script src="{% static 'core/js/appear.js' %}"></script>
+    <script src="{% static 'core/js/wow.js' %}"></script>
+    <script src="{% static 'core/js/jQuery.style.switcher.min.js' %}"></script>
+    <script src="{% static 'core/js/jarallax.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'core/js/custom-script.js' %}"></script>
+    <script src="{% static 'core/js/lang.js' %}"></script>
+
 </body>
+
+
 </html>
