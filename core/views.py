@@ -1,8 +1,15 @@
 from django.shortcuts import render, HttpResponse
+from .models import User
+from .models import Certificado
+
+
 
 # Create your views here.
 def home(request):
-    return render(request, "core/home.html")
+    usuarios = User.objects.all()
+    certificados = Certificado.objects.all()
 
-def ingreso(request):
+    return render(request, "core/home.html",{'usuarios':usuarios, 'certificados':certificados})
+
+def generar(request):
     return render(request, "core/home.html")

@@ -237,7 +237,7 @@
                                 <h2>Las Preguntas Más <br>Frecuentes<span class="dot">.</span></h2>
                             </div>
                             <div class="featured-block clearfix">
-                                <div class="image"><a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="lightbox-image"><img src="{% static 'core/images/resource/featured-image-2.jpg' %}" alt=""></a></div>
+                                <div class="image"><a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="lightbox-image"><img src="{% static 'core/images/resource/vervideo.fw.png' %}" alt=""></a></div>
 
                             </div>
                             <div class="text-justify">Recuerda revisar el video para saber como usar tu generador de certificados.</div>
@@ -312,7 +312,7 @@
                                 <div class="inner">
                                     <div class="content">
                                         <div class="count-outer count-box">
-                                            <span class="count-text" data-speed="4000" data-stop="8705">0</span>
+                                            <span class="count-text" data-speed="4000" data-stop="{{usuarios.count}}">{{usuarios.count}}</span>
                                         </div>
                                         <div class="counter-title">Usuarios Registrados</div>
                                     </div>
@@ -324,7 +324,7 @@
                                 <div class="inner">
                                     <div class="content">
                                         <div class="count-outer count-box alternate">
-                                            <span class="count-text" data-speed="3000" data-stop="480">0</span>
+                                            <span class="count-text" data-speed="3000" data-stop="{{certificados.count}}">{{certificados.count}}</span>
                                         </div>
                                         <div class="counter-title">Certificados Emitidos</div>
                                     </div>
