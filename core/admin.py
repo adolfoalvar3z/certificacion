@@ -11,12 +11,15 @@ class PreguntaAdmin(admin.ModelAdmin):
 
 
 class CertificadoAdmin(admin.ModelAdmin):
-    readonly_fields = ['user', 'fecha_certificado']
+    readonly_fields = ('user', 'fecha_certificado')
     pass
 
+
 class RespuestaAdmin(admin.ModelAdmin):
-    readonly_fields = ['pregunta', 'user', 'fecha_respuesta']
+    list_display = ('user', 'fecha_respuesta', 'respuesta', 'pregunta')
+    readonly_fields = ('respuesta', 'pregunta', 'user', 'fecha_respuesta')
     pass
+
 
 admin.site.register(Pregunta, PreguntaAdmin)
 
