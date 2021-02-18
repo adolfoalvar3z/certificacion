@@ -1,8 +1,6 @@
 from django.shortcuts import render, HttpResponse
-from .models import User
-from .models import Certificado
-
-
+from django.contrib.auth.models import User
+from consulta.models import Certificado
 
 # Create your views here.
 def home(request):
@@ -11,5 +9,4 @@ def home(request):
 
     return render(request, "core/home.html",{'usuarios':usuarios, 'certificados':certificados})
 
-def generar(request):
-    return render(request, "core/home.html")
+

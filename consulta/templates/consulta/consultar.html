@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+
+    <title>Consultar Certificado - EMPRESA</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'consulta/assets/css/bootstrap.min.css' %}">
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="{% static 'consulta/assets/css/line-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'consulta/assets/css/owl.carousel.min.css' %}" />
+
+    <!-- Custom Css --> 
+    <link rel="stylesheet" type="text/css" href="{% static 'consulta/css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'consulta/css/theme-1.css' %}">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/icon-114x114.png">
+
+
+  </head>
+  <body>
+    
+    <div class="ugf-wrapper theme-bg">
+      <div class="ugf-content-block">
+        <div class="logo">
+          <a href="/"><img src="{% static 'consulta/images/logo.png' %}" alt=""></a>
+        </div>
+        <div class="container-md">
+          <div class="row">
+            <div class="col-lg-7 offset-lg-5">
+              <div class="ugf-content pt270">
+                <h2>Consultar Certificados</h2>
+                <p>Ingresa el número del certificado en el siguiente formulario:</p>
+                <form action="#">
+                  <div class="form-group">
+                    <label for="inputMail" class="control-label">Código Certificado</label>
+                    <input type="text" placeholder="CV0000000001" required class="form-control" id="inputMail">
+                  </div>
+                  <div class="form-group check-flex mb10">
+                  </div>
+                  <button class="btn">Consultar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ugf-sidebar flex-bottom ugf-sidebar-bg">
+        <div class="testimonial-carousel owl-carousel">
+          <div class="item">
+            <div class="quote">
+              <img src="{% static 'consulta/images/quote.png' %}" alt="">
+            </div>
+            <p>La mayoría de las personas que contraen la COVID-19 presentan síntomas leves o moderados y pueden recuperarse con medidas de apoyo. Si tiene tos, fiebre y dificultades para respirar, busque atención médica pronto, pero llame antes por teléfono al centro de salud.</p>
+            <h5 class="name">Organización Mundial de la Salud</h5>
+            <span class="designation">OMS</span>
+          </div>
+          <div class="item">
+            <div class="quote">
+              <img src="{% static 'consulta/images/quote.png' %}" alt="">
+            </div>
+            <p>La probabilidad de que el virus de la COVID-19 se propague con los zapatos e infecte a personas es muy baja. Como medida de precaución, especialmente en hogares donde haya bebés y niños pequeños que gateen o jueguen en el suelo, considere dejar los zapatos a la entrada de su casa.</p>
+            <h5 class="name">Organización Mundial de la Salud</h5>
+            <span class="designation">OMS</span>
+          </div>
+          <div class="item">
+            <div class="quote">
+              <img src="{% static 'consulta/images/quote.png' %}" alt="">
+            </div>
+            <p>Utilizar mascarillas médicas durante mucho tiempo puede ser incómodo, pero no provoca intoxicación por CO2 ni hipoxia. Una vez puesta la mascarilla médica, compruebe que está bien colocada y que le permite respirar con normalidad. No reutilice una mascarilla desechable y cámbiela cuando se humedezca.</p>
+            <h5 class="name">Organización Mundial de la Salud</h5>
+            <span class="designation">OMS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'consulta/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'consulta/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'consulta/assets/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'consulta/assets/js/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'consulta/js/custom.js' %}"></script>
+  </body>
+</html>

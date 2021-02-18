@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views as core_view
+from consulta import views as consulta_view
+from respuesta import views as respuesta_view
 
 urlpatterns = [
     path('', core_view.home, name="home"),
-    #path('generar', core_view.generar, name="generar"),
-    #path('consultar', core_view.consultar, name="consultar"),
+    path('respuesta/', respuesta_view.respuesta, name="respuesta"),
+    path('consulta/', consulta_view.consulta, name="consulta"),
 
     path('admin/', admin.site.urls),
 ]
